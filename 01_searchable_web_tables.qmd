@@ -85,7 +85,7 @@ DT::datatable(events,
                 dom = 'Bfrtip',
                 buttons = c('copy', 'csv', "excel")
               )) %>%
-  DT::formatStyle('cand_lastname',  color = 'red', fontWeight = 'bold')
+  DT::formatStyle('cand_lastname',  color = 'blue', fontWeight = 'bold')
 ```
 
 
@@ -102,10 +102,10 @@ mytable <- DT::datatable(events,
                            dom = 'Bfrtip',
                            buttons = c('copy', 'csv', "excel")
                          )) %>%
-  DT::formatStyle('cand_lastname',  color = 'red', fontWeight = 'bold') 
+  DT::formatStyle('cand_lastname',  color = 'blue', fontWeight = 'bold') 
 
 # ... then just run this simple bit of code to export to html
-DT::saveWidget(mytable, "mytable.html")
+DT::saveWidget(mytable, "candidatetracker.html")
 
 
 # We've now created a working web page that can be put anywhere on the internet we choose
